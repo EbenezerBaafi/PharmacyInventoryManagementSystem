@@ -341,6 +341,7 @@
             this.dgvMedicines.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.dgvMedicines.Size = new System.Drawing.Size(950, 300);
             this.dgvMedicines.TabIndex = 4;
+            this.dgvMedicines.SelectionChanged += new System.EventHandler(this.dgvMedicines_SelectionChanged_1);
             // 
             // MainForm
             // 
@@ -357,6 +358,7 @@
             this.Name = "MainForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Pharmacy Management System";
+            this.Load += new System.EventHandler(this.MainForm_Load_1);
             this.gbMedicineDetails.ResumeLayout(false);
             this.gbMedicineDetails.PerformLayout();
             this.gbActions.ResumeLayout(false);
